@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Atividade dos slides <br />
+        Desenvolvimento Web
+      </h1>
+      <table></table>
+      <form action="/produto" method="POST">
+        Produto:
+        <input type="text" name="produto" /><br />
+        Quantidade:
+        <input type="number" name="quant" /><br />
+        Data:
+        <input type="date" name="data" /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+      <a href="equipe.html" id="equipe">Link</a>
+    </div>
+    <div>
+      <h1>Inserir animal</h1>
+      <form action="/zoo" method="POST">
+        Nome: <input type="text" name="name" /><br />
+        Animal:
+        <select name="animal">
+          <option value="" selected disabled>Selecione um animal</option>
+          <option value="DOG">Cachorro</option>
+          <option value="CAT">Gato</option>
+          <option value="BIRD">Pássaro</option></select
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <div>
+      <h1>Buscar animal</h1>
+      <form action="/zoo" method="GET">
+        Nome: <input type="text" name="name" /><br />
+        Animal:
+        <select name="animal">
+          <option value="" selected disabled>Selecione um animal</option>
+          <option value="DOG">Cachorro</option>
+          <option value="CAT">Gato</option>
+          <option value="BIRD">Pássaro</option>
+          <option value="TODOS">Todos</option></select
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+      
+    </div>
+  </body>
+</html>
